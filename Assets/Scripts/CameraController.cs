@@ -24,6 +24,7 @@ public class CameraController : MonoBehaviour
     private Coroutine WaitToStopDragCoroutine;
 
     private Vector2 lastMovements = Vector2.zero;
+    private float zoomTarget;
 
     void Start()
     {
@@ -39,6 +40,14 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
+
+        if (isAnimating == true)
+        {
+            transform.LookAt(target);
+
+            return;
+
+        }
         if (Draggable.SomethingBeingDragged == true)
         {
             if (WaitToStopDragCoroutine != null)
@@ -109,12 +118,8 @@ public class CameraController : MonoBehaviour
 
         Vector2 newMovements = new Vector2(x, y);
 
-        if (isAnimating == true)
-        {
-            transform.LookAt(target);
-
-        }
-        else if (canRotate == true && (lastMovements != newMovements) && isWatingToStopDrag == false)
+        
+        if (canRotate == true && (lastMovements != newMovements) && isWatingToStopDrag == false)
         {
             Quaternion rotation = Quaternion.Euler(y, x, 0.0f);
             Vector3 position = rotation * new Vector3(0.0f, 0.0f, -distance) + target.position;
@@ -151,5 +156,24 @@ public class CameraController : MonoBehaviour
         isWatingToStopDrag = true;
         yield return new WaitForSeconds(0.3f);
         isWatingToStopDrag = false;
+    }
+
+    public void ZoomByEvent(float newZoomValue)
+    {
+       
+        LeanTween.value(gameObject, SetDistance, distance, newZoomValue, 1).setEase(LeanTweenType.easeInOutSine).setOnComplete(StopCameraAnim);
+    }
+
+    private void SetDistance(float newZoomValue)
+    {
+        SetIsAnimating(true);
+        Vector3 position = transform.rotation * new Vector3(0.0f, 0.0f, -distance) + target.position;
+        transform.position = position;
+        distance = newZoomValue;
+    }
+
+    private void StopCameraAnim()
+    {
+        SetIsAnimating(false);
     }
 }

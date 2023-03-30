@@ -24,5 +24,19 @@ public class CollisiionEventTrigger : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.transform.name.Equals(collisionTargetName) == true)
+        {
+            OnTouchTarget?.Invoke();
+            Debug.Log("Tocou no certo:" + other.transform.name);
+        }
+        else
+        {
+            Debug.Log(other.transform.name);
+            OnTouchNonTarget?.Invoke();
+        }
+    }
+
 
 }

@@ -13,7 +13,7 @@ public class Moveable : MonoBehaviour
     {
         OnMove?.Invoke();
         movement.OnMovementStart?.Invoke();
-        LeanTween.moveLocal(gameObject, movement.transform.position, movement.time).setEase(movement.easing).setOnComplete(OnFinishMovement);
+        LeanTween.move(gameObject, movement.transform.position, movement.time).setEase(movement.easing).setOnComplete(OnFinishMovement);
         currentMovement = movement;
     }
 
