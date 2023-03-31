@@ -161,7 +161,7 @@ public class CameraController : MonoBehaviour
     public void ZoomByEvent(float newZoomValue)
     {
        
-        LeanTween.value(gameObject, SetDistance, distance, newZoomValue, 1).setEase(LeanTweenType.easeInOutSine).setOnComplete(StopCameraAnim);
+        LeanTween.value(gameObject, SetDistance, distance, newZoomValue, 0.6f).setEase(LeanTweenType.easeInOutSine).setOnComplete(StopCameraAnim);
     }
 
     private void SetDistance(float newZoomValue)

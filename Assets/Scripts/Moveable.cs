@@ -17,6 +17,32 @@ public class Moveable : MonoBehaviour
         currentMovement = movement;
     }
 
+    public void Rotate(Rotation rotate)
+    {
+        OnMove?.Invoke();
+        rotate.OnMovementStart?.Invoke();
+       
+        switch (rotate.axis)
+        {
+        
+            case RotationAxis.X:
+                LeanTween.rotateAround(gameObject, Vector3.right, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setOnComplete(OnFinishMovement);
+
+                break;
+            case RotationAxis.Y:
+                LeanTween.rotateAround(gameObject, Vector3.up, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setOnComplete(OnFinishMovement);
+
+                break;
+            case RotationAxis.Z:
+                LeanTween.rotateAround(gameObject, Vector3.forward, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setOnComplete(OnFinishMovement);
+
+                break;
+        
+        }
+
+        currentMovement = rotate;
+    }
+
     public void ResetPosition()
     {
         OnMove?.Invoke();
