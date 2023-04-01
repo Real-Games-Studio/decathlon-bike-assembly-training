@@ -26,15 +26,15 @@ public class Moveable : MonoBehaviour
         {
         
             case RotationAxis.X:
-                LeanTween.rotateAround(gameObject, Vector3.right, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setOnComplete(OnFinishMovement);
+                LeanTween.rotateAroundLocal(gameObject, Vector3.right, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setOnComplete(OnFinishMovement);
 
                 break;
             case RotationAxis.Y:
-                LeanTween.rotateAround(gameObject, Vector3.up, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setOnComplete(OnFinishMovement);
+                LeanTween.rotateAroundLocal(gameObject, Vector3.up, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setOnComplete(OnFinishMovement);
 
                 break;
             case RotationAxis.Z:
-                LeanTween.rotateAround(gameObject, Vector3.forward, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setOnComplete(OnFinishMovement);
+                LeanTween.rotateAroundLocal(gameObject, Vector3.forward, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setOnComplete(OnFinishMovement);
 
                 break;
         

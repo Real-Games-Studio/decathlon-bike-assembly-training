@@ -34,7 +34,6 @@ public class EventManager : MonoBehaviour
 
     public void CallNextEvent()
     {
-        Debug.Log("fdfs");
         if (currentEventIndex < EventSequence.Count)
         {
             GameEvent currentEvent = EventSequence[currentEventIndex];
@@ -105,6 +104,7 @@ public class EventManager : MonoBehaviour
         }
 
     }
+
 }
 
 [System.Serializable]
