@@ -12,13 +12,12 @@ public class ClickDetection : MonoBehaviour, IPointerDownHandler
 
     public UnityEvent OnTouch;
     public void OnPointerDown(PointerEventData eventData)
-    {
+    {      
         touchsDetected++;
         if (touchsDetected >= howManyTouchsToTrigger)
         {
             OnTouch?.Invoke();
         }
     }
-
  
 }

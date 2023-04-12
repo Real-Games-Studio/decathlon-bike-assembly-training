@@ -51,6 +51,7 @@ public class Moveable : MonoBehaviour
 
     private void OnFinishMovement()
     {
+        Debug.Log("T FUCK INS GOING ON");
         OnStop?.Invoke();
         if (currentMovement != null)
         {

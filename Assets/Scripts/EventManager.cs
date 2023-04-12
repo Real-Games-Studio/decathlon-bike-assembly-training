@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using System.Diagnostics;
 
 public class EventManager : MonoBehaviour
 {
@@ -28,21 +29,23 @@ public class EventManager : MonoBehaviour
     private void CallEvent()
     {
         GameEvent currentEvent = EventSequence[currentEventIndex];
-        Debug.Log(currentEvent.eventName);
+        UnityEngine.Debug.Log(currentEvent.eventName);
         StartCoroutine(CounterToCallNextEvent(currentEvent.eventFunction, currentEvent.timeToRunEvent, currentEvent.CallNextEventAuto));
     }
 
     public void CallNextEvent()
     {
+        //UnityEngine.Debug.Log("MyMethod was called from: " + stackTrace.GetFrame(1).GetMethod().Name);
+        //StackTrace stackTrace = new StackTrace();
         if (currentEventIndex < EventSequence.Count)
         {
             GameEvent currentEvent = EventSequence[currentEventIndex];
-            if (currentEvent.isIndepententEvent == true)
-            {
-                currentEventIndex++;
-                CallNextEvent();
-                return;
-            }
+            //if (currentEvent.isIndepententEvent == true)
+            //{
+            //    currentEventIndex++;
+            //    CallNextEvent();
+            //    return;
+            //}
             CallEvent();
             
         }
@@ -53,7 +56,7 @@ public class EventManager : MonoBehaviour
         int newCurrentEventIndex = currentEventIndex + (amoutOfJumps + 1);
         if ( newCurrentEventIndex >= EventSequence.Count)
         {
-            Debug.Log("Event jump get index out of event's list size");
+            UnityEngine.Debug.Log("Event jump get index out of event's list size");
             return;
         }
 
@@ -67,7 +70,7 @@ public class EventManager : MonoBehaviour
     {
         if (index >= EventSequence.Count)
         {
-            Debug.Log("There is no event for this index");
+            UnityEngine.Debug.Log("There is no event for this index");
             return;
         }
 
@@ -87,7 +90,7 @@ public class EventManager : MonoBehaviour
             }
         }
 
-        Debug.Log("Event name not found");
+        UnityEngine.Debug.Log("Event name not found");
         
         
     }
@@ -100,6 +103,7 @@ public class EventManager : MonoBehaviour
         newEvent.Invoke();
         if (callNextEventAuto == true)
         {
+         
             CallNextEvent();
         }
 
@@ -114,7 +118,7 @@ public class GameEvent
     [SerializeField] public UnityEvent eventFunction;
     [SerializeField] public float timeToRunEvent;
     [SerializeField] public bool CallNextEventAuto = false;
-    [SerializeField] public bool isIndepententEvent = false;
+    //[SerializeField] public bool isIndepententEvent = false;
 
 }
 
