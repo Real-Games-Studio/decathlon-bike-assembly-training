@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Fade : MonoBehaviour {
+public class FadeOld : MonoBehaviour {
 
 	public Texture2D textura;
 	public float tempoFade = 0.0f;
