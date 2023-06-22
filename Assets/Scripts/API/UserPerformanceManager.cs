@@ -15,8 +15,12 @@ public class UserPerformanceManager : MonoBehaviour
 
     public RegisterSuccessEvent OnRegisterSuccess;
     public RegisterErrorEvent OnRegisterError;
+    
+    public int pontos;
 
-    public void RegisterPerformance(float tempoTotal, int pontos)
+    public float tempoTotal;
+
+    public void RegisterPerformance()
     {
         StartCoroutine(SendRegisterRequest(tempoTotal, pontos));
     }
