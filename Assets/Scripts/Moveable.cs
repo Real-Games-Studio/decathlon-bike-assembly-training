@@ -26,15 +26,40 @@ public class Moveable : MonoBehaviour
         {
         
             case RotationAxis.X:
-                LeanTween.rotateAroundLocal(gameObject, Vector3.right, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setOnComplete(OnFinishMovement);
-
+                if (rotate.isLoop == true)
+                {
+                    LeanTween.rotateAroundLocal(gameObject, Vector3.right, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setRepeat(-1).setOnComplete(OnFinishMovement);
+                }
+                else
+                {
+                    LeanTween.rotateAroundLocal(gameObject, Vector3.right, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setOnComplete(OnFinishMovement);
+                }
+                
                 break;
             case RotationAxis.Y:
-                LeanTween.rotateAroundLocal(gameObject, Vector3.up, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setOnComplete(OnFinishMovement);
+                if (rotate.isLoop == true)
+                {
+                    LeanTween.rotateAroundLocal(gameObject, Vector3.up, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setRepeat(-1).setOnComplete(OnFinishMovement);
+                }
+                else
+                {
+                    LeanTween.rotateAroundLocal(gameObject, Vector3.up, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setOnComplete(OnFinishMovement);
+                }
+
+               
 
                 break;
             case RotationAxis.Z:
-                LeanTween.rotateAroundLocal(gameObject, Vector3.forward, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setOnComplete(OnFinishMovement);
+                if (rotate.isLoop == true)
+                {
+                    LeanTween.rotateAroundLocal(gameObject, Vector3.forward, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setRepeat(-1).setOnComplete(OnFinishMovement);
+                }
+                else
+                {
+                    LeanTween.rotateAroundLocal(gameObject, Vector3.forward, rotate.rotationTarget, rotate.time).setEase(rotate.easing).setOnComplete(OnFinishMovement);
+                }
+
+                
 
                 break;
         
@@ -57,7 +82,11 @@ public class Moveable : MonoBehaviour
             currentMovement.OnMovementEnds?.Invoke();
         }
         
+    }
 
-
+    public void StopLoop()
+    {
+        //OnFinishMovement();
+        LeanTween.cancel(gameObject);
     }
 }

@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using System.Diagnostics;
-
+using System; 
 public class EventManager : MonoBehaviour
 {
     
     public static EventManager instance;
+    public static Action OnCallEvent;
     [SerializeField] private bool CallOnStart = false;
     [SerializeField] private List<GameEvent> EventSequence;
     private int currentEventIndex = 0;
+    
 
     private void Awake()
     {
@@ -39,6 +41,7 @@ public class EventManager : MonoBehaviour
         //StackTrace stackTrace = new StackTrace();
         if (currentEventIndex < EventSequence.Count)
         {
+            OnCallEvent?.Invoke();
             GameEvent currentEvent = EventSequence[currentEventIndex];
             //if (currentEvent.isIndepententEvent == true)
             //{
