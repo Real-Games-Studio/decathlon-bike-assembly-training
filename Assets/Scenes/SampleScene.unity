@@ -447,6 +447,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &9251281
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3628,6 +3631,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &97403947
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3889,6 +3895,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &134357585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4197,6 +4206,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &155587574
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9762,6 +9774,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &460161007
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10105,6 +10120,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &483987931
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12736,6 +12754,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &573066327
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13484,6 +13505,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &647197816
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16736,6 +16760,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &695577846
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17949,6 +17976,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &770821072
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18465,6 +18495,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &800709005
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25668,6 +25701,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 1
 --- !u!65 &944529407
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26099,6 +26135,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &962085677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27532,6 +27571,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &1015675811
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27905,6 +27947,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &1044914259
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28457,6 +28502,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &1068894410
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30204,6 +30252,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &1179686322
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30501,6 +30552,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &1208548798
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37478,6 +37532,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &1423366792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37801,6 +37858,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &1446271485
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38185,6 +38245,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &1477117180
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38669,6 +38732,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &1490268256
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41773,6 +41839,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &1656076002
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -42648,6 +42717,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &1683281325
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44985,6 +45057,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &1790445029
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47085,6 +47160,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &1878714072
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49525,6 +49603,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &1970488034
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50586,6 +50667,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  lockXAxis: 0
+  lockYAxis: 0
+  lockZAxis: 0
 --- !u!65 &2023243307
 BoxCollider:
   m_ObjectHideFlags: 0
