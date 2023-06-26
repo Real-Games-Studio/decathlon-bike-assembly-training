@@ -578,6 +578,7 @@ GameObject:
   - component: {fileID: 236192770}
   - component: {fileID: 236192771}
   - component: {fileID: 236192773}
+  - component: {fileID: 236192774}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -757,6 +758,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  url: https://www.realgamesstudio.com.br/decathlon-bike-simulator/api/status.php
+--- !u!114 &236192773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236192767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c04f7ca0dbd12547bf0f1855428239b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &236192774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236192767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca563436fbddfee42a7b87c44d9f418d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnFieldsEmpty:
+    m_PersistentCalls:
+      m_Calls: []
+  OnAdmin:
+    m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 1658645663}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -781,19 +813,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-  url: https://www.realgamesstudio.com.br/decathlon-bike-simulator/api/status.php
---- !u!114 &236192773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 236192767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c04f7ca0dbd12547bf0f1855428239b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  adminUser: admin
+  adminPass: 1234
+  emailInput: {fileID: 1175688586}
+  senhaInput: {fileID: 118216669}
 --- !u!1 &277956398
 GameObject:
   m_ObjectHideFlags: 0
@@ -886,7 +909,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &301311533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1429,7 +1452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &907090544
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1908,7 +1931,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1120292412
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2271,7 +2294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1257224814
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2831,7 +2854,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1386004123
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3434,7 +3457,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1658645664
 RectTransform:
   m_ObjectHideFlags: 0
