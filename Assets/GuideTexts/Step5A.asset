@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1644f76ffe417284dbada1db56f284bc, type: 3}
+  m_Name: Step5A
+  m_EditorClassIdentifier: 
+  StepTitle: "Passo 5A: Prepara\xE7\xE3o: Inserir a roda dianteira"
+  Steps: "1 - Abrir o trav\xE3o\r\n2- Retirar a prote\xE7\xE3o do garfo"

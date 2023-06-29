@@ -9,6 +9,7 @@ public class EventManager : MonoBehaviour
     
     public static EventManager instance;
     public static Action OnCallEvent;
+    public static Action OnCallNonAutoEvent;
     [SerializeField] private bool CallOnStart = false;
     [SerializeField] private List<GameEvent> EventSequence;
     private int currentEventIndex = 0;
@@ -100,14 +101,23 @@ public class EventManager : MonoBehaviour
 
     private IEnumerator CounterToCallNextEvent(UnityEvent newEvent, float time, bool callNextEventAuto)
     {
+        if (callNextEventAuto == false)
+        {
+            OnCallNonAutoEvent?.Invoke();
+            UnityEngine.Debug.Log("Ganhou ponto");
 
+        }
+        else
+        {
+            UnityEngine.Debug.Log("era auto, não era pra ganhar ponto");
+        }
         yield return new WaitForSeconds(time);
         currentEventIndex++;
         newEvent.Invoke();
         if (callNextEventAuto == true)
-        {
-         
+        {            
             CallNextEvent();
+
         }
 
     }

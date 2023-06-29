@@ -9,8 +9,8 @@ public class Timer : MonoBehaviour
     private bool canRunTimer = false;
     [SerializeField] private TextMeshProUGUI TimerText;
     [SerializeField] private RectTransform TextBoxUI;
-    private Vector2 openPosition = new Vector2(35, -35);
-    private Vector2 closedPosition = new Vector2(-500, -50);
+    private Vector2 openPosition = new Vector2(30, 30);
+    private Vector2 closedPosition = new Vector2(-500, 30);
     public void StartTimer()
     {
         LeanTween.move(TextBoxUI, openPosition, 0.4f).setEaseOutBack();

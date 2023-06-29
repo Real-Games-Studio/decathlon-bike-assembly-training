@@ -16,6 +16,7 @@ public class ErrorManager : MonoBehaviour
     public void WrongMove()
     {
         EnableErrorUI();
+        PointsManager.Instance.LoosePoints(10);
         errorCount++;
         if (errorCount >= 3)
         {
@@ -32,10 +33,10 @@ public class ErrorManager : MonoBehaviour
     public void SetHelpText(string text)
     {
         currentHelpMessage = text;
-        if (GameManager.Instance.IsGuidedMode == true)
-        {
-            UISetText.Instance.SetText(currentHelpMessage);
-        }
+        //if (GameManager.Instance.IsGuidedMode == true)
+        //{
+        //    UISetText.Instance.SetText(currentHelpMessage);
+        //}
         
     }
 

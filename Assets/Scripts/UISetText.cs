@@ -8,8 +8,8 @@ public class UISetText : MonoBehaviour
     public static UISetText Instance { get; private set; }
     private TextMeshProUGUI _textUI;
     [SerializeField] private RectTransform TextBoxUI;
-    private Vector2 openPosition = new Vector2(-50, -50);
-    private Vector2 closedPosition = new Vector2(1350, -50);
+    private Vector2 openPosition = new Vector2(-20, -30);
+    private Vector2 closedPosition = new Vector2(1350, -30);
 
 
     private void Awake()
