@@ -25,12 +25,14 @@ public class CameraController : MonoBehaviour
 
     private Vector2 lastMovements = Vector2.zero;
     private float zoomTarget;
+    public Vector3 resetPosition;
 
     void Start()
     {
         Vector3 angles = transform.eulerAngles;
         x = angles.y;
         y = angles.x;
+
     }
 
     public void ChangeCameraTarget(Transform targetTransform)
@@ -175,5 +177,17 @@ public class CameraController : MonoBehaviour
     private void StopCameraAnim()
     {
         SetIsAnimating(false);
+    }
+
+    public void GetResetPosition()
+    {
+        resetPosition = transform.position;
+    }
+
+    public void ResetCamera()
+    {
+        isAnimating = true;
+        LeanTween.move(gameObject, resetPosition, 1).setOnComplete(()=> {isAnimating = false; });
+        
     }
 }
