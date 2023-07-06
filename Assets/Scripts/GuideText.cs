@@ -9,6 +9,7 @@ public class GuideText : ScriptableObject
     public string StepTitle;
     [TextArea(0, 50)]
     public string Steps;
+    public Sprite guideSprite;
 
 
 }
